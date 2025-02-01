@@ -12,23 +12,7 @@
     <h1 id="title">Esperando datos para H1...</h1>
     <p id="paragraph">Esperando datos para el párrafo...</p>
 
-    <script>
-        function updateContent() {
-            const newTitle = localStorage.getItem('pageTitle');
-            const newH1 = localStorage.getItem('pageH1');
-            const newP = localStorage.getItem('pageP');
-
-            if (newTitle) document.title = newTitle;
-            if (newH1) document.getElementById('title').textContent = newH1;
-            if (newP) document.getElementById('paragraph').textContent = newP;
-        }
-
-        updateContent();
-
-        setInterval(updateContent, 1000);
-
-        window.addEventListener('storage', updateContent);
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
